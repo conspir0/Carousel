@@ -1,0 +1,36 @@
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 50vh;
+    min-height: 250px;
+    margin-right: 10px;
+    background: #8C8;
+    background-size: cover;
+}
+.container {
+    position: absolute;
+    left: calc(50% - 600px);
+    top: 25vh;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+.button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}

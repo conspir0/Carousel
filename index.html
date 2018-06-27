@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-carousel"></div>
+    
+    <div class="progress-bar"></div>
+    <button class="button">Reset</button>
+
+    <a href="#carousel-cell1">View cell 1</a>
+    <a href="#carousel-cell2">View cell 2</a>
+    <a href="#carousel-cell3">View cell 3</a>
+    <a href="#carousel-cell4">View cell 4</a>
+    <a href="#carousel-cell5">View cell 5</a>
+    
+    <script id="carousel-gallery" type="x-tmpl-mustache">
+    <div class="container">
+        <p> {{ title }}</p>
+        <p> {{{ description }}}</p>
+    </div>    
+    </script>
+    <script>
+        var carouselList = [
+	{
+		image: '', 
+		title: 'First Image',
+        description: '<p>Lorem ipsum.</p> <img src="image/1.jpeg" alt="Photo placeholder"> <p>Dolor sit.</p>'
+	},
+	{
+		image: '', 
+		title: 'Second Image',
+        description: '<p>Lorem ipsum.</p> <img src="image/2.jpeg" alt="Photo placeholder"> <p>Dolor sit.</p>'
+	},
+	{
+		image: '', 
+		title: 'Third Image',
+        description: '<p>Lorem ipsum.</p> <img src="image/3.jpeg" alt="Photo placeholder"> <p>Dolor sit.</p>'
+	},
+	{
+		image: '', 
+		title: 'Fourth Image',
+        description: '<p>Lorem ipsum.</p> <img src="image/4.jpeg" alt="Photo placeholder"> <p>Dolor sit.</p>'
+	},
+	{
+		image: '', 
+		title: 'Fifth Image',
+        description: '<p>Lorem ipsum.</p> <img src="image/5.jpeg" alt="Photo placeholder"> <p>Dolor sit.</p>'
+	},
+];
+    </script>
+    <script src="vendor/flickity.pkgd.min.js"></script>
+    <script src="vendor/hash.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
